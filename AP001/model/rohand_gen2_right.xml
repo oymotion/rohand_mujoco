@@ -1,0 +1,183 @@
+<mujoco model="rohand_right">
+  <compiler angle="radian"/>
+  <asset>
+    <mesh name="base_link" content_type="model/stl" file="../assets/meshes_r/base_link.STL"/>
+    <mesh name="if_proximal_link" content_type="model/stl" file="../assets/meshes_r/if_proximal_link.STL"/>
+    <mesh name="if_distal_link" content_type="model/stl" file="../assets/meshes_r/if_distal_link.STL"/>
+    <mesh name="if_connecting_link" content_type="model/stl" file="../assets/meshes_r/if_connecting_link.STL"/>
+    <mesh name="mf_proximal_link" content_type="model/stl" file="../assets/meshes_r/mf_proximal_link.STL"/>
+    <mesh name="mf_distal_link" content_type="model/stl" file="../assets/meshes_r/mf_distal_link.STL"/>
+    <mesh name="mf_connecting_link" content_type="model/stl" file="../assets/meshes_r/mf_connecting_link.STL"/>
+    <mesh name="rf_proximal_link" content_type="model/stl" file="../assets/meshes_r/rf_proximal_link.STL"/>
+    <mesh name="rf_distal_link" content_type="model/stl" file="../assets/meshes_r/rf_distal_link.STL"/>
+    <mesh name="rf_connecting_link" content_type="model/stl" file="../assets/meshes_r/rf_connecting_link.STL"/>
+    <mesh name="lf_proximal_link" content_type="model/stl" file="../assets/meshes_r/lf_proximal_link.STL"/>
+    <mesh name="lf_distal_link" content_type="model/stl" file="../assets/meshes_r/lf_distal_link.STL"/>
+    <mesh name="lf_connecting_link" content_type="model/stl" file="../assets/meshes_r/lf_connecting_link.STL"/>
+    <mesh name="th_root_link" content_type="model/stl" file="../assets/meshes_r/th_root_link.STL"/>
+    <mesh name="th_proximal_link" content_type="model/stl" file="../assets/meshes_r/th_proximal_link.STL"/>
+    <mesh name="th_slider_link" content_type="model/stl" file="../assets/meshes_r/th_slider_link.STL"/>
+    <mesh name="th_connecting_link" content_type="model/stl" file="../assets/meshes_r/th_connecting_link.STL"/>
+    <mesh name="th_distal_link" content_type="model/stl" file="../assets/meshes_r/th_distal_link.STL"/>
+    <mesh name="th_slider_connecting_link" content_type="model/stl" file="../assets/meshes_r/th_slider_connecting_link.STL"/>
+  </asset>
+  <worldbody>
+    <body name="base_link" gravcomp="1">
+      <geom type="mesh" rgba="1 1 1 1" mesh="base_link"/>
+    </body>
+    <body name="if_proximal_link" pos="-0.11237 -0.038159 0.0019394" quat="0.998185 0.0437218 -0.00181175 0.0413629" gravcomp="1">
+      <inertial pos="-0.0163989 0.00759959 -0.00651026" quat="-0.000214193 0.647755 -0.000123063 0.761848" mass="0.0293523" diaginertia="2.37498e-07 2.32573e-07 1.02726e-07"/>
+      <joint name="if_proximal_link" pos="0 0 0" axis="0 -1 0" ref="0.3" damping="0.01"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="if_proximal_link"/>
+      <body name="if_distal_link" pos="-0.034068 0 -0.011383" gravcomp="1">
+        <inertial pos="0.000662394 0.00709506 -0.00281286" quat="0.5 0.5 -0.5 0.5" mass="0.038308" diaginertia="1.56486e-6 1.56366e-6 9.99018e-7"/>
+        <joint name="if_distal_link" pos="0 0 0" axis="0 -1 0" damping="0.01"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="if_distal_link"/>
+      </body>
+    </body>
+    <body name="if_connecting_link" pos="-0.11996 -0.036476 0.0065579" quat="0.998185 0.0437218 -0.00181175 0.0413629" gravcomp="1">
+      <inertial pos="-0.0118153 0.00489999 -0.0121371" quat="0.650059 0.27825 0.27825 0.650059" mass="0.00200341" diaginertia="2.67058e-08 2.63769e-08 3.50323e-10"/>
+      <joint name="if_connecting_link" pos="0 0 0" axis="0 -1 0"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="if_connecting_link"/>
+    </body>
+    <body name="mf_proximal_link" pos="-0.11567 -0.018179 0.0068982" quat="0.999978 3.62962e-05 2.40067e-07 0.00661395">
+      <inertial pos="-0.0179828 0.00759997 -0.00814933" quat="0.551493 0.442532 0.442482 0.551571" mass="0.0237718" diaginertia="3.62183e-07 3.54257e-07 1.37122e-07"/>
+      <joint name="mf_proximal_link" pos="0 0 0" axis="0 -1 0" ref="0.3" damping="0.01"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="mf_proximal_link"/>
+      <body name="mf_distal_link" pos="-0.038382 0 -0.014438">
+        <inertial pos="0.000586079 0.00709507 -0.00284487" quat="0.5 0.5 -0.5 0.5" mass="0.0318308" diaginertia="1.56534e-06 1.56318e-06 9.99018e-7"/>
+        <joint name="mf_distal_link" pos="0 0 0" axis="0 -1 0" damping="0.01"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="mf_distal_link"/>
+      </body>
+    </body>
+    <body name="mf_connecting_link" pos="-0.12313 -0.015578 0.011298" quat="0.999978 3.62962e-05 2.40067e-07 0.00661395">
+      <inertial pos="-0.0138038 0.00489999 -0.0137176" quat="0.646663 0.286053 0.286053 0.646663" mass="0.00215109" diaginertia="3.73208e-08 3.69827e-08 3.6101e-10"/>
+      <joint name="mf_connecting_link" pos="0 0 0" axis="0 -1 0"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="mf_connecting_link"/>
+    </body>
+    <body name="rf_proximal_link" pos="-0.11367 0.0018657 0.0061535" quat="0.9996 3.96941e-05 -1.12338e-06 -0.0282897">
+      <inertial pos="-0.0161909 0.00759957 -0.00701117" quat="-0.000210939 0.635969 -0.000115909 0.771715" mass="0.029352" diaginertia="2.37494e-07 2.32569e-07 1.02725e-07"/>
+      <joint name="rf_proximal_link" pos="0 0 0" axis="0 -1 0" ref="0.3" damping="0.01"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="rf_proximal_link"/>
+      <body name="rf_distal_link" pos="-0.033703 0 -0.012425">
+        <inertial pos="0.000830147 0.00709507 -0.00276826" quat="0.5 0.5 -0.5 0.5" mass="0.03118308" diaginertia="1.56486e-06 1.56366e-06 9.99018e-7"/>
+        <joint name="rf_distal_link" pos="0 0 0" axis="0 -1 0" damping="0.01"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="rf_distal_link"/>
+      </body>
+    </body>
+    <body name="rf_connecting_link" pos="-0.12092 0.0049808 0.010553" quat="0.9996 3.96941e-05 -1.12338e-06 -0.0282897">
+      <inertial pos="-0.0113775 0.00489999 -0.0125484" quat="0.654891 0.266679 0.266679 0.654891" mass="0.00200341" diaginertia="2.67058e-08 2.63769e-08 3.50323e-10"/>
+      <joint name="rf_connecting_link" pos="0 0 0" axis="0 -1 0"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="rf_connecting_link"/>
+    </body>
+    <body name="lf_proximal_link" pos="-0.11038 0.022023 0.0042647" quat="0.997301 -0.0438454 -0.00258706 -0.0588393">
+      <inertial pos="-0.0146539 0.00760051 -0.00629909" quat="-0.00016871 0.623949 -0.000134704 0.781465" mass="0.0277931" diaginertia="1.82324e-07 1.7656e-07 9.421e-08"/>
+      <joint name="lf_proximal_link" pos="0 0 0" axis="0 -1 0" ref="0.3" damping="0.01"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="lf_proximal_link"/>
+      <body name="lf_distal_link" pos="-0.029816 0 -0.011429">
+        <inertial pos="0.000767689 0.00709503 -0.00275676" quat="0.5 0.5 -0.5 0.5" mass="0.03118308" diaginertia="1.56563e-06 1.56289e-06 9.99018e-7"/>
+        <joint name="lf_distal_link" pos="0 0 0" axis="0 -1 0" damping="0.01"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="lf_distal_link"/>
+      </body>
+    </body>
+    <body name="lf_connecting_link" pos="-0.11738 0.02595 0.0084121" quat="0.997301 -0.0438454 -0.00258706 -0.0588393">
+      <inertial pos="-0.0100663 0.00489991 -0.0114499" quat="0.661985 0.248548 0.248548 0.661985" mass="0.00276993" diaginertia="1.94958e-08 1.92587e-08 2.55967e-10"/>
+      <joint name="lf_connecting_link" pos="0 0 0" axis="0 -1 0"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="lf_connecting_link"/>
+    </body>
+    <body name="th_root_link" pos="-0.0251932 -0.0195489 -0.0184475" quat="0.994021 -0.00070467 -0.108993 0.00642661">
+      <inertial pos="-0.0453718 0.0157166 0.0271886" quat="-0.195827 0.736298 -0.199767 0.616125" mass="0.0734873" diaginertia="0.000154618 0.000128515 6.37189e-05"/>
+      <joint name="th_root_link" pos="0 0 0" axis="1 0 0" ref="0.75" damping="0.05"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="th_root_link"/>
+      <body name="th_slider_connecting_link" pos="-0.0365651 -0.0147173 -0.00674203" quat="0.9147 -0.396163 0.0732925 -0.0317435">
+        <inertial pos="-0.00324219 0.0079 -0.0044315" quat="0.67215 0.219576 0.219576 0.67215" mass="0.886531" diaginertia="1.54015e-09 1.3854e-09 1.64213e-10"/>
+        <joint name="th_slider_connecting_link" pos="0 0 0" axis="0 1 0" ref="0.35" damping="0.05"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="th_slider_connecting_link"/>
+        <body name="th_slider_link" pos="-0.00648323 0 -0.00886272" quat="0.46322 0.534254 -0.534254 -0.46322">
+          <inertial pos="-0.00789993 -0.00171494 0.0143554" quat="0.705724 0.0442026 -0.0442026 0.705724" mass="0.03164989" diaginertia="1.74468e-07 1.47922e-07 3.02562e-08"/>
+          <joint name="th_slider_link" pos="0 0 0" axis="1 0 0" damping="0.05"/>
+          <geom type="mesh" rgba="1 1 1 1" mesh="th_slider_link"/>
+          <body name="th_connecting_link" pos="-0.0124999 -0.00537962 0.0318921" quat="0.707107 -0.000620187 0.707107 0.00062018">
+            <inertial pos="-0.00567321 0.000333704 0.00445241" quat="0.525781 0.525781 0.472815 0.472815" mass="0.0210992" diaginertia="6.94037e-09 5.14342e-09 3.44915e-09"/>
+            <joint name="th_connecting_link" pos="0 0 0" axis="0 0 1" damping="0.05"/>
+            <geom type="mesh" rgba="1 1 1 1" mesh="th_connecting_link"/>
+            <body name="th_distal_link" pos="-0.00985073 0.000986428 0.0117">
+              <inertial pos="0.000439708 0.0113075 -0.00788321" quat="0.707107 0 0 0.707107" mass="0.182377" diaginertia="1.23939e-05 1.23782e-05 6.36213e-6"/>
+              <joint name="th_distal_link" pos="0 0 0" axis="0 0 1"/>
+              <geom type="mesh" rgba="1 1 1 1" mesh="th_distal_link"/>
+            </body>
+          </body>
+          <body name="th_proximal_link" pos="-0.0148999 -0.00029573 0.00254324" quat="0.927732 0.0537576 -0.0213666 0.368738">
+            <inertial pos="0.00722902 -0.00254587 0.0089212" quat="0.925011 -0.0885178 0.0349618 -0.367826" mass="0.0544409" diaginertia="2.19956e-04 1.9818e-04 3.24991e-05"/>
+            <joint name="th_proximal_link" pos="0 0 0" axis="0 0 -1" type="slide" damping="0.5"/>
+            <geom type="mesh" rgba="1 1 1 1" mesh="th_proximal_link"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <contact>
+    <exclude body1="base_link" body2="if_proximal_link"/>
+    <exclude body1="base_link" body2="if_distal_link"/>
+    <exclude body1="base_link" body2="if_connecting_link"/>
+    <exclude body1="if_connecting_link" body2="if_proximal_link"/>
+    <exclude body1="if_connecting_link" body2="if_distal_link"/>
+    <exclude body1="if_proximal_link" body2="if_distal_link"/>
+    <exclude body1="base_link" body2="mf_proximal_link"/>
+    <exclude body1="base_link" body2="mf_distal_link"/>
+    <exclude body1="base_link" body2="mf_connecting_link"/>
+    <exclude body1="mf_connecting_link" body2="mf_proximal_link"/>
+    <exclude body1="mf_connecting_link" body2="mf_distal_link"/>
+    <exclude body1="mf_proximal_link" body2="mf_distal_link"/>
+    <exclude body1="base_link" body2="rf_proximal_link"/>
+    <exclude body1="base_link" body2="rf_distal_link"/>
+    <exclude body1="base_link" body2="rf_connecting_link"/>
+    <exclude body1="rf_connecting_link" body2="rf_proximal_link"/>
+    <exclude body1="rf_connecting_link" body2="rf_distal_link"/>
+    <exclude body1="rf_proximal_link" body2="rf_distal_link"/>
+    <exclude body1="base_link" body2="lf_proximal_link"/>
+    <exclude body1="base_link" body2="lf_distal_link"/>
+    <exclude body1="base_link" body2="lf_connecting_link"/>
+    <exclude body1="lf_connecting_link" body2="lf_proximal_link"/>
+    <exclude body1="lf_connecting_link" body2="lf_distal_link"/>
+    <exclude body1="lf_proximal_link" body2="lf_distal_link"/>
+    <exclude body1="th_root_link" body2="base_link"/>
+    <exclude body1="th_root_link" body2="th_slider_link"/>
+    <exclude body1="th_root_link" body2="th_connecting_link"/>
+    <exclude body1="th_root_link" body2="th_distal_link"/>
+    <exclude body1="th_root_link" body2="th_slider_link"/>
+    <exclude body1="th_root_link" body2="th_proximal_link"/>
+    <exclude body1="th_root_link" body2="th_slider_connecting_link"/>
+    <exclude body1="th_slider_connecting_link" body2="base_link"/>
+    <exclude body1="th_slider_connecting_link" body2="th_slider_link"/>
+    <exclude body1="th_slider_connecting_link" body2="th_connecting_link"/>
+    <exclude body1="th_slider_connecting_link" body2="th_distal_link"/>
+    <exclude body1="th_slider_connecting_link" body2="th_proximal_link"/>
+    <exclude body1="th_slider_link" body2="base_link"/>
+    <exclude body1="th_slider_link" body2="th_connecting_link"/>
+    <exclude body1="th_slider_link" body2="th_distal_link"/>
+    <exclude body1="th_slider_link" body2="th_proximal_link"/>
+    <exclude body1="th_connecting_link" body2="base_link"/>
+    <exclude body1="th_connecting_link" body2="th_distal_link"/>
+    <exclude body1="th_connecting_link" body2="th_proximal_link"/>
+    <exclude body1="th_distal_link" body2="base_link"/>
+    <exclude body1="th_distal_link" body2="th_proximal_link"/>
+    <exclude body1="th_proximal_link" body2="base_link"/>
+  </contact>
+  <equality>
+    <connect body1="if_distal_link" body2="if_connecting_link" anchor="0.0015 0.005 -0.007" solimp="0.95 0.99 0.001" solref="0.005 1"/>
+    <connect body1="mf_distal_link" body2="mf_connecting_link" anchor="0.0015 0.005 -0.00734" solimp="0.95 0.99 0.001" solref="0.005 1"/>
+    <connect body1="rf_distal_link" body2="rf_connecting_link" anchor="0.0015 0.005 -0.00734" solimp="0.95 0.99 0.001" solref="0.005 1"/>
+    <connect body1="lf_distal_link" body2="lf_connecting_link" anchor="0.0015 0.005 -0.00734" solimp="0.99 0.99 0.001" solref="0.001 1"/>
+    <connect body1="th_proximal_link" body2="th_root_link" anchor="0.009 -0.0095 -0.018" solimp="0.95 0.99 0.001" solref="0.005 1"/>
+    <connect body1="th_distal_link" body2="th_proximal_link" anchor="-0 0.01 0.001" solimp="0.8 0.95 0.001" solref="0.005 1"/>
+  </equality>
+  <actuator>
+    <position name="index_finger" joint="if_proximal_link" kp="1" ctrlrange="0 1.44"/>
+    <position name="middle_finger" joint="mf_proximal_link" kp="1" ctrlrange="0 1.44"/>
+    <position name="ring_finger" joint="rf_proximal_link" kp="1" ctrlrange="0 1.44"/>
+    <position name="little_finger" joint="lf_proximal_link" kp="1" ctrlrange="0 1.44"/>
+    <position name="thumb_root" joint="th_root_link" kp="1" ctrlrange="0 1.57"/>
+    <position name="thumb" joint="th_slider_connecting_link" kp="1" ctrlrange="0 0.7"/>
+  </actuator>
+</mujoco>
