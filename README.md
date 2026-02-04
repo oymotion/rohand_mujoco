@@ -6,5 +6,6 @@ A collection of ROHand MuJoCo package
 
 [AP001](./AP001/README.md): MuJoCo package for ROH-AP001
 
+[AP002](./AP002/README.md): MuJoCo package for ROH-AP002
+
 [LiteS001](./LiteS001/README.md): MuJoCo package for LiteS-001
-"# rohand_mujoco" 
