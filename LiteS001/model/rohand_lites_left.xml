@@ -24,92 +24,93 @@
 
   <worldbody>
     <body name="base_link" gravcomp="1">
+      <inertial pos="-0.0658808 0.000338733 0.000829642" quat="0.970769 -0.019495 0.0233824 -0.238079" mass="0.36527" diaginertia="0.000124045 0.000195126 0.00029651"/>
       <geom type="mesh" rgba="1 1 1 1" mesh="base_link"/>
     </body>
     <body name="if_proximal_link" pos="-0.10701 0.030104 0.0030149">
-      <inertial pos="-0.0159453 0.00146643 -0.00260483" quat="0.0676638 0.736881 -0.00970053 0.672558" mass="0.0205167" diaginertia="2.03107e-07 1.89792e-07 7.44394e-08"/>
+      <inertial pos="-0.0159452 0.00146591 -0.0026052" quat="0.996632 -0.040746 0.0454796 -0.0547296" mass="0.00818" diaginertia="2.96799e-07 7.56656e-07 8.09749e-07"/>
       <joint name="if_proximal_link" pos="0 0 0" axis="-0.10529 -0.990658 0.0866698" damping="0.01"/>
       <geom type="mesh" rgba="1 1 1 1" mesh="if_proximal_link"/>
       <body name="if_distal_link" pos="-0.032501 0.0031213 -0.00036051">
-        <inertial pos="-0.0195363 0.00200908 -0.0043624" quat="0.584403 0.45847 0.455738 0.490491" mass="0.0375199" diaginertia="4.17262e-06 4.15643e-06 5.91812e-07"/>
+        <inertial pos="-0.0195361 0.00200903 -0.00436242" quat="0.671086 -0.735427 -0.0226523 -0.090979" mass="0.00429" diaginertia="6.76668e-08 4.75251e-07 4.771e-07"/>
         <joint name="if_distal_link" pos="0 0 0" axis="0.10529 0.990658 -0.0866698" damping="0.01"/>
         <geom type="mesh" rgba="1 1 1 1" mesh="if_distal_link"/>
       </body>
     </body>
     <body name="if_connecting_link" pos="-0.11386 0.031177 0.006969">
-      <inertial pos="-0.0139984 0.000921876 -0.00646817" quat="0.629483 0.395475 0.403814 0.533184" mass="0.00266925" diaginertia="1.97462e-07 1.95007e-07 2.63266e-8"/>
+      <inertial pos="-0.0139984 0.000921876 -0.00646817" quat="0.65666 -0.730652 -0.0973791 -0.159568" mass="0.00125" diaginertia="1.97144e-09 1.46029e-07 1.47867e-07"/>
       <joint name="if_connecting_link" pos="0 0 0" axis="0.10529 0.990658 -0.0866698"/>
       <geom type="mesh" rgba="1 1 1 1" mesh="if_connecting_link"/>
     </body>
     <body name="mf_proximal_link" pos="-0.1104 0.011987 0.0069142">
-      <inertial pos="-0.0184872 0.000664075 -0.00413876" quat="0.0137683 0.704482 -0.0116507 0.709492" mass="0.0248791" diaginertia="2.93058e-07 2.84348e-07 9.05441e-08"/>
+      <inertial pos="-0.0184871 0.000663995 -0.00413873" quat="0.999831 -0.00145642 -0.0035412 -0.0179763" mass="0.00818" diaginertia="2.97701e-07 9.34905e-07 9.63551e-07"/>
       <joint name="mf_proximal_link" pos="0 0 0" axis="-0.0356841 -0.999363 -0.000165031" damping="0.01"/>
       <geom type="mesh" rgba="1 1 1 1" mesh="mf_proximal_link"/>
       <body name="mf_distal_link" pos="-0.037422 0.0010322 -0.0023446">
-        <inertial pos="-0.0193186 0.00116857 -0.00549271" quat="0.56389 0.450757 0.430878 0.541471" mass="0.0375194" diaginertia="4.17262e-06 4.15643e-06 5.91816e-07"/>
+        <inertial pos="-0.0193184 0.00116855 -0.00549272" quat="0.701676 -0.703342 -0.064154 -0.0940476" mass="0.00531" diaginertia="8.37573e-08 5.88254e-07 5.90545e-07"/>
         <joint name="mf_distal_link" pos="0 0 0" axis="0.0443199 0.999017 -0.0010438" damping="0.01"/>
         <geom type="mesh" rgba="1 1 1 1" mesh="mf_distal_link"/>
       </body>
     </body>
     <body name="mf_connecting_link" pos="-0.11731 0.012233 0.010884">
-      <inertial pos="-0.0159076 0.000569264 -0.00759578" quat="0.596058 0.403184 0.388949 0.575219" mass="0.00282844" diaginertia="2.82059e-08 2.79486e-08 2.76837e-10"/>
+      <inertial pos="-0.0159076 0.000569264 -0.00759578" quat="0.691835 -0.696505 -0.121646 -0.146447" mass="0.00125" diaginertia="1.89258e-09 1.91069e-07 1.92828e-07"/>
       <joint name="mf_connecting_link" pos="0 0 0" axis="0.0356841 0.999363 0.000165031"/>
       <geom type="mesh" rgba="1 1 1 1" mesh="mf_connecting_link"/>
     </body>
     <body name="rf_proximal_link" pos="-0.1083 -0.0062817 0.0062414">
-      <inertial pos="-0.0160016 -0.000547367 -0.00261516" quat="-0.0114948 0.736936 0.0126179 0.675747" mass="0.0205169" diaginertia="2.03109e-07 1.89793e-07 7.44392e-08"/>
+      <inertial pos="-0.0160016 -0.00054785 -0.00261554" quat="0.000567441 0.998918 0.0170297 -0.0432793" mass="0.00818" diaginertia="2.96795e-07 7.56659e-07 8.09754e-07"/>
       <joint name="rf_proximal_link" pos="0 0 0" axis="0.0341459 -0.999417 0.00015788" damping="0.01"/>
       <geom type="mesh" rgba="1 1 1 1" mesh="rf_proximal_link"/>
       <body name="rf_distal_link" pos="-0.032623 -0.0014134 -0.00038833">
-        <inertial pos="-0.0196408 -0.000199457 -0.00435281" quat="0.532111 0.450801 0.462919 0.547122" mass="0.0375201" diaginertia="4.17274e-06 4.15655e-06 5.91819e-07"/>
+        <inertial pos="-0.0196407 -0.000199468 -0.0043528" quat="0.703529 0.705701 -0.0489206 0.0681131" mass="0.00449" diaginertia="7.08219e-08 4.97417e-07 4.99354e-07"/>
         <joint name="rf_distal_link" pos="0 0 0" axis="-0.025593 0.999671 -0.0018697" damping="0.01"/>
         <geom type="mesh" rgba="1 1 1 1" mesh="rf_distal_link"/>
       </body>
     </body>
     <body name="rf_connecting_link" pos="-0.11522 -0.0065174 0.01021">
-      <inertial pos="-0.0140091 -0.000479662 -0.00649301" quat="0.573604 0.392307 0.406034 0.593472" mass="0.00266925" diaginertia="1.97462e-08 1.95007e-08 2.63266e-10"/>
+      <inertial pos="-0.0140091 -0.000479662 -0.00649301" quat="0.692709 0.697052 -0.118489 0.142244" mass="0.00125" diaginertia="1.97144e-09 1.46029e-07 1.47867e-07"/>
       <joint name="rf_connecting_link" pos="0 0 0" axis="-0.0341459 0.999417 -0.00015788"/>
       <geom type="mesh" rgba="1 1 1 1" mesh="rf_connecting_link"/>
     </body>
     <body name="lf_proximal_link" pos="-0.10528 -0.024621 0.0039331">
-      <inertial pos="-0.0143173 -0.00109225 -0.0033439" quat="-0.064522 0.718999 0.0045611 0.691995" mass="0.0183692" diaginertia="1.53271e-07 1.4097e-07 6.66263e-08"/>
+      <inertial pos="-0.0143163 -0.00109212 -0.00334434" quat="0.997722 0.0424055 0.0191098 0.0488565" mass="0.0076" diaginertia="2.75672e-07 5.83216e-07 6.34092e-07"/>
       <joint name="lf_proximal_link" pos="0 0 0" axis="0.0958948 -0.991608 -0.0867078" damping="0.01"/>
       <geom type="mesh" rgba="1 1 1 1" mesh="lf_proximal_link"/>
       <body name="lf_distal_link" pos="-0.02882 -0.0028859 -0.00234">
-        <inertial pos="-0.0138444 -0.00050695 -0.00586573" quat="0.538156 0.400573 0.386004 0.633191" mass="0.0242865" diaginertia="1.41796e-06 1.40517e-06 3.27828e-07"/>
+        <inertial pos="-0.0138444 -0.00050695 -0.00586572" quat="0.653489 0.730974 -0.10759 0.164484" mass="0.00319" diaginertia="4.30598e-08 1.84568e-07 1.86248e-07"/>
         <joint name="lf_distal_link" pos="0 0 0" axis="-0.0958948 0.991608 0.0867078" damping="0.01"/>
         <geom type="mesh" rgba="1 1 1 1" mesh="lf_distal_link"/>
       </body>
     </body>
     <body name="lf_connecting_link" pos="-0.11213 -0.02563 0.0078874">
-      <inertial pos="-0.0117585 -0.000496792 -0.00732304" quat="0.560441 0.371422 0.353627 0.650308" mass="0.00253788" diaginertia="1.512e-08 1.48906e-08 2.45782e-10"/>
+      <inertial pos="-0.0117585 -0.000496792 -0.00732304" quat="0.646343 0.722473 -0.146243 0.197199" mass="0.00125" diaginertia="1.99773e-09 1.21032e-07 1.22896e-07"/>
       <joint name="lf_connecting_link" pos="0 0 0" axis="-0.0958948 0.991608 0.0867078"/>
       <geom type="mesh" rgba="1 1 1 1" mesh="lf_connecting_link"/>
     </body>
     <body name="th_root_link" pos="-0.045615 0.018979 -0.020109">
-      <inertial pos="0.00272961 0.00562024 -0.00109272" quat="0.7113 0.572811 0.167062 0.371524" mass="0.0195343" diaginertia="2.53752e-07 2.18568e-07 9.14517e-08"/>
+      <inertial pos="0.00272961 0.00562024 -0.00109272" quat="0.384835 0.142331 0.621096 0.667746" mass="0.01516" diaginertia="7.09731e-07 1.69624e-06 1.9693e-06"/>
       <joint name="th_root_link" pos="0 0 0" axis="-0.974661 0.033383 -0.22118" range="0 1.57" damping="0.05"/>
       <geom type="mesh" rgba="1 1 1 1" mesh="th_root_link"/>
       <body name="th_slider_connecting_link" pos="-0.011841 0.015536 -0.013425">
-        <inertial pos="-0.00023563 0.00534266 0.00790312" quat="0.500057 0.373327 -0.622801 0.471899" mass="0.886531" diaginertia="1.50668e-09 1.35211e-09 1.63977e-10"/>
+        <inertial pos="0 0 0" quat="1 0 0 0" mass="1e-06" diaginertia="1e-09 1e-09 1e-09"/>
         <joint name="th_slider_connecting" pos="0 0 0" axis="-0.22107 0.00721281 0.975231" damping="0.05"/>
         <geom type="mesh" rgba="0.72549 0.752941 0.854902 1" mesh="th_slider_connecting_link"/>
         <body name="th_slider_link" pos="0.0027227 0.010581 0.0017161">
-          <inertial pos="-0.0143104 0.0113894 0.0034907" quat="0.67618 0.607442 0.215364 0.35695" mass="0.03486787" diaginertia="6.83391e-08 5.52016e-08 1.43803e-08"/>
+          <inertial pos="0.00778492 -0.0066673 0.00181401" quat="0.681922 -0.630424 0.177128 -0.325844" mass="0.00327" diaginertia="1.04556e-07 4.0136e-07 4.96879e-07"/>
           <joint name="th_slider_link" pos="0 0 0" axis="-0.22107 0.00721281 0.975231" damping="0.05"/>
           <geom type="mesh" rgba="1 1 1 1" mesh="th_slider_link"/>
           <body name="th_connecting_link" pos="-0.024383 0.022236 0.0011272">
-            <inertial pos="-0.00414748 0.00236523 -0.000914308" quat="0.639242 0.551341 0.308142 0.438682" mass="0.0229811" diaginertia="3.74356e-09 2.86744e-09 1.83302e-09"/>
+            <inertial pos="-0.00414748 0.00236523 -0.000914308" quat="0.700047 -0.669907 0.0796635 -0.234122" mass="0.00055" diaginertia="3.77827e-09 5.91044e-09 7.71632e-09"/>
             <joint name="th_connecting_link" pos="0 0 0" axis="-0.22107 0.00721281 0.975231" damping="0.05"/>
             <geom type="mesh" rgba="1 1 1 1" mesh="th_connecting_link"/>
             <body name="th_distal_link" pos="-0.0078212 0.0039766 -0.0020592">
-              <inertial pos="-0.011245 0.0024881 -0.00230787" quat="0.677679 0.610049 0.210471 0.352552" mass="0.1860659" diaginertia="2.89048e-05 2.59239e-05 1.67746e-05"/>
+              <inertial pos="-0.00452082 0.0101282 -0.000840424" quat="0.680647 -0.628026 0.182029 -0.330406" mass="0.00535" diaginertia="1.94829e-07 3.01079e-07 3.35696e-07"/>
               <joint name="th_distal_link" pos="0 0 0" axis="0.22107 -0.00721301 -0.975231"/>
               <geom type="mesh" rgba="1 1 1 1" mesh="th_distal_link"/>
             </body>
           </body>
           <body name="th_proximal_link" pos="0.001236 -0.0011628 0.0007502">
-            <inertial pos="-0.0135239 0.0073662 0.00323567" quat="0.179855 0.597105 -0.219816 0.750199" mass="0.0646471" diaginertia="2.12792e-04 1.86475e-04 3.81016e-05"/>
+            <inertial pos="-0.0177884 0.0114288 0.00377712" quat="0.952688 0.0282523 -0.108253 -0.28261" mass="0.0407" diaginertia="2.39875e-06 1.17399e-05 1.33967e-05"/>
             <joint name="th_proximal_link" pos="0 0 0" axis="0.741917 -0.647797 0.172969" type="slide" damping="0.5"/>
             <geom type="mesh" rgba="1 1 1 1" mesh="th_proximal_link"/>
           </body>
